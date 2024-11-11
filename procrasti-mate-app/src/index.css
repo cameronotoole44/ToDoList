@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Minimalistic Color Palette */
 :root {
   --primary-color: #6a6a6a;
   --secondary-color: #b1b1b1;
@@ -20,14 +19,14 @@
   --card-bg: #fafafa;
   --shadow-color: rgba(0, 0, 0, 0.1);
 
-  /* Add responsive spacing units */
+  /* spacing */
   --spacing-xs: clamp(0.5rem, 1vw, 0.75rem);
   --spacing-sm: clamp(0.75rem, 1.5vw, 1rem);
   --spacing-md: clamp(1rem, 2vw, 1.5rem);
   --spacing-lg: clamp(1.5rem, 3vw, 2rem);
 }
 
-/* Dark Mode adjustments */
+/* dark mode */
 [data-theme="dark"] {
   --primary-color: #d3d3d3;
   --secondary-color: #bbbbbb;
@@ -213,7 +212,7 @@ button:hover {
   text-align: center;
 }
 
-/* Cat section styles */
+/* cat section */
 .cat-button {
   display: flex;
   align-items: center;
@@ -252,7 +251,7 @@ img:hover {
   box-shadow: 0 0 20px var(--secondary-color);
 }
 
-/* Media queries */
+/* queries */
 @media screen and (max-width: 600px) {
   .input-container {
     flex-direction: column;
@@ -291,7 +290,7 @@ img:hover {
   }
 }
 
-/* Accessibility styles */
+/* accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
