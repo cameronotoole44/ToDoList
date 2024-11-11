@@ -15,6 +15,7 @@ const App: React.FC = () => {
   });
   const [catImage, setCatImage] = useState<string | null>(null);
 
+  // dark mode saved in local storage //
   useEffect(() => {
     document.body.setAttribute("data-theme", isDarkMode ? "dark" : "light");
     localStorage.setItem("darkMode", isDarkMode.toString());
@@ -31,6 +32,7 @@ const App: React.FC = () => {
     }
   }, []);
 
+  // dark mode toggle //
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
   const addTask = () => {
@@ -60,6 +62,7 @@ const App: React.FC = () => {
     if (e.key === "Enter") addTask();
   };
 
+  // API call for random cat image //
   const fetchCatImage = async () => {
     try {
       const response = await fetch(
